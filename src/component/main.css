@@ -1,0 +1,60 @@
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+    padding: 10px;
+}
+@media (min-width:768px){
+    .main-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (min-width:1024px){
+    .main-grid{
+    grid-template-columns: repeat(4,1fr);
+}
+}
+.card{
+    border:1px solid #ccc;
+    border-radius: 1rem;
+    padding-left:3rem;
+}
+.card-image{
+    height: 7rem;
+    width: 7rem;
+    object-fit: contain;
+}
+@media (min-width:768px){
+    .card-image{
+        height: 10rem;
+        width: 10rem;
+        object-fit: contain;
+    }
+}
+@media (min-width:1024px){
+    .card-image{
+        height: 14rem;
+        width: 14rem;
+        object-fit: contain;
+    }
+}
+.card-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-price,
+.card-rating {
+  font-size: 14px;
+}
+.btn{
+    padding-inline: calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 1);
+    margin-left: calc(var(--spacing) * 1);
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+    outline-color: var(--color-green-300);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-green-100)
+}
