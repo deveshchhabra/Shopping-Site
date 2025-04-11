@@ -4,7 +4,7 @@ import './Body.css'; // or card-specific styles
 
 const Card = ({ data }) => {
   return (
-    <Link to={`/product/${data.id}`} className='card items-center outline block no-underline text-black hover:shadow-lg transition'>
+    <Link to={`/product/${data.id}`} className='card items-center  block no-underline text-black hover:shadow-lg transition'>
       <div className=''>
       <img src={data.image} className='card-image ' alt={data.title} />
       <div className='card-title'>{data.title}</div>

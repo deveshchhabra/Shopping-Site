@@ -38,7 +38,7 @@ const ProductDetails = () => {
         <div className='bg-gray-100  sm:p-6 md:p-3 lg:p-6 flex   items-center justify-center'>
           <img src={product?.image}
             alt={product?.title}
-            className='h-[20rem] md:h-[25rem] lg:h-[30rem] object-contain'
+            className='h-[18rem] md:h-[25rem] lg:h-[30rem] object-contain'
           />
 
         </div>
