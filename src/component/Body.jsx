@@ -15,7 +15,7 @@ const Body = () => {
   }, []);
 
   return (
-    <div className='main-grid'>
+    <div className='main-grid items-center outline'>
       {Data.map((data) => (
         <Card key={data.id} data={data} />
       ))}

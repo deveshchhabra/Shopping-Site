@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -25,17 +26,17 @@ const Log = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] flex items-center justify-center">
-      <div className="bg-white w-full max-w-md p-8 rounded-xl shadow-md border border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Login to your account</h2>
+    <div className="min-h-screen bg-[#f5f5f5] flex  items-center  justify-center">
+      <div className="bg-white w-full max-w-md p-2  lg:p-8 rounded-xl shadow-md border border-gray-200">
+        <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Login to your account</h2>
 
-        <p className="text-sm text-center text-gray-500 mb-6">
+        <p className="text-sm text-center text-gray-500 mb-1 ">
           Get access to your Orders, Wishlist and Recommendations
         </p>
 
         {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-2">
           <input
             type="text"
             placeholder="Username"

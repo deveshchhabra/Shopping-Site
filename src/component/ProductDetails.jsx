@@ -35,18 +35,18 @@ const ProductDetails = () => {
     <div className='max-w-6xl mx-autos p-6'>
       <div className='grid grid-cols-1 p-2 md:grid-cols-2 gap-8
       border rounded-2xl'>
-        <div className='bg-gray-100 p-6 flex items-center justify-center'>
+        <div className='bg-gray-100  sm:p-6 md:p-3 lg:p-6 flex   items-center justify-center'>
           <img src={product?.image}
             alt={product?.title}
-            className='sm:h-[5rem] md:h-[14rem] lg:h-[30rem] object-contain'
+            className='h-[20rem] md:h-[25rem] lg:h-[30rem] object-contain'
           />
 
         </div>
-        <div className='p-6 flex flex-col justify-between'>
+        <div className='p-1 flex flex-col justify-between'>
           <div>
-            <h1 className='text-4xl font-semibold mb-4'>{product?.title}</h1>
-            <p className="text-gray-600 mb-4">{product?.description}</p>
-            <div className="text-4xl font-bold text-green-600 mb-4">
+            <h1 className='text-[0.8rem] md:text-xl lg:text-4xl font-semibold mb-4'>{product?.title}</h1>
+            <p className="text-gray-600 mb-4 text-[0.6rem] md:text-[1rem] lg:text-[1rem]">{product?.description}</p>
+            <div className="text-[0.8rem] md:text-xl lg:text-xl font-bold text-green-600 mb-4">
 
               ${product?.price}
             </div>
