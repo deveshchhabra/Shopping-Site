@@ -22,7 +22,7 @@ const ProductDetails = () => {
   };
   if (!product) return (
     <div className="flex flex-col items-center justify-center
-       min-h-[60vh] sm:min-h-[30vh] md:min-h-[50vh] text-lg p-4">
+       min-h-[100vh] sm:min-h-[30vh] md:min-h-[100vh] text-lg p-4 dark:bg-gray-900">
       <img
         src="https://i.gifer.com/ZZ5H.gif" // You can replace with any spinner or branded loading image
         alt="Loading..."
@@ -35,7 +35,7 @@ const ProductDetails = () => {
     <div className='max-w-6xl mx-autos p-6'>
       <div className='grid grid-cols-1 p-2 md:grid-cols-2 gap-8
       border rounded-2xl'>
-        <div className='bg-gray-100  sm:p-6 md:p-3 lg:p-6 flex   items-center justify-center'>
+        <div className='bg-gray-100  dark:bg-gray-900 sm:p-6 md:p-3 lg:p-6 flex   items-center justify-center'>
           <img src={product?.image}
             alt={product?.title}
             className='h-[18rem] md:h-[25rem] lg:h-[30rem] object-contain'

@@ -5,19 +5,23 @@ import ProductDetail from './component/ProductDetails'
 import {Routes, Route } from 'react-router-dom'
 import Cart from './component/Cart'
 import Login from './component/Login'
+import ThemeProveder from './Context/ThemeContext'
+import Mode from './component/Mode'
 const App = () => {
   return (
-    <div>
-
+    <ThemeProveder>
+      <div>
       <Header />
+      <Mode/>
+
         <Routes>
           <Route path='/' element={<Body />} />
           <Route path='/product/:id' element={<ProductDetail />} />
           <Route path='/cart' element={<Cart/>}/>
           <Route path="/login" element={<Login />} />
-
         </Routes>
     </div>
+</ThemeProveder>
   )
 }
 
