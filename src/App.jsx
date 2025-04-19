@@ -12,15 +12,18 @@ const App = () => {
     <ThemeProveder>
       <div>
       <Header />
-      <Mode/>
 
         <Routes>
           <Route path='/' element={<Body />} />
+
           <Route path='/product/:id' element={<ProductDetail />} />
           <Route path='/cart' element={<Cart/>}/>
           <Route path="/login" element={<Login />} />
         </Routes>
+    <Mode/>
+
     </div>
+
 </ThemeProveder>
   )
 }

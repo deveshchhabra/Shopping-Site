@@ -13,7 +13,8 @@ const ThemeProveder = ({children}) => {
     const toggleTheme=(mode)=>setTheme(mode)
     return (
         <ThemeContext.Provider value={{theme,toggleTheme}}>
-            <div className={`${theme==='dark'?'bg-black text-white':'bg-white text-black'}`}>
+            <div className={`${theme==='light'?'bg-black text-white':
+                'bg-white text-black'}`}>
             {children}
             </div>
         </ThemeContext.Provider>
